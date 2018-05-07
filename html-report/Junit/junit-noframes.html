@@ -1,0 +1,383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:string="xalan://java.lang.String" xmlns:lxslt="http://xml.apache.org/xslt">
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Unit Test Results.</title>
+        <style type="text/css">
+      body {
+        font:normal 68% verdana,arial,helvetica;
+        color:#000000;
+      }
+      table tr td, table tr th {
+          font-size: 68%;
+      }
+      table.details tr th{
+        font-weight: bold;
+        text-align:left;
+        background:#a6caf0;
+      }
+      table.details tr td{
+        background:#eeeee0;
+      }
+
+      p {
+        line-height:1.5em;
+        margin-top:0.5em; margin-bottom:1.0em;
+      }
+      h1 {
+        margin: 0px 0px 5px; font: 165% verdana,arial,helvetica
+      }
+      h2 {
+        margin-top: 1em; margin-bottom: 0.5em; font: bold 125% verdana,arial,helvetica
+      }
+      h3 {
+        margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica
+      }
+      h4 {
+        margin-bottom: 0.5em; font: bold 100% verdana,arial,helvetica
+      }
+      h5 {
+        margin-bottom: 0.5em; font: bold 100% verdana,arial,helvetica
+      }
+      h6 {
+        margin-bottom: 0.5em; font: bold 100% verdana,arial,helvetica
+      }
+      .Error {
+        font-weight:bold; color:red;
+      }
+      .Failure {
+        font-weight:bold; color:purple;
+      }
+      .Properties {
+        text-align:right;
+      }
+      </style>
+        <script type="text/javascript" language="JavaScript">
+        var TestCases = new Array();
+        var cur;
+        </script><script type="text/javascript" language="JavaScript">
+        function displayProperties (name) {
+          var win = window.open('','JUnitSystemProperties','scrollbars=1,resizable=1');
+          var doc = win.document;
+          doc.open();
+          doc.write("<html><head><title>Properties of " + name + "</title>");
+          doc.write("<style>")
+          doc.write("body {font:normal 68% verdana,arial,helvetica; color:#000000; }");
+          doc.write("table tr td, table tr th { font-size: 68%; }");
+          doc.write("table.properties { border-collapse:collapse; border-left:solid 1 #cccccc; border-top:solid 1 #cccccc; padding:5px; }");
+          doc.write("table.properties th { text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#eeeeee; }");
+          doc.write("table.properties td { font:normal; text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#fffffff; }");
+          doc.write("h3 { margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica }");
+          doc.write("</style>");
+          doc.write("</head><body>");
+          doc.write("<h3>Properties of " + name + "</h3>");
+          doc.write("<div align=\"right\"><a href=\"javascript:window.close();\">Close</a></div>");
+          doc.write("<table class='properties'>");
+          doc.write("<tr><th>Name</th><th>Value</th></tr>");
+          for (prop in TestCases[name]) {
+            doc.write("<tr><th>" + prop + "</th><td>" + TestCases[name][prop] + "</td></tr>");
+          }
+          doc.write("</table>");
+          doc.write("</body></html>");
+          doc.close();
+          win.focus();
+        }
+      
+      </script>
+    </head>
+    <body>
+        <a name="top"></a>
+        <h1>Unit Test Results.</h1>
+        <table width="100%">
+            <tr>
+                <td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org">JUnit</a> and <a href="http://ant.apache.org/ant">Ant</a>.</td>
+            </tr>
+        </table>
+        <hr size="1">
+        <h2>Summary</h2>
+        <table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+            <tr valign="top">
+                <th>Tests</th><th>Failures</th><th>Errors</th><th>Skipped</th><th>Success rate</th><th>Time</th>
+            </tr>
+            <tr valign="top" class="Error">
+                <td>5</td><td>0</td><td>3</td><td>0</td><td>40.00%</td><td>17.673</td>
+            </tr>
+        </table>
+        <table border="0" width="95%">
+            <tr>
+                <td style="text-align: justify;">
+        Note: <i>failures</i> are anticipated and checked for with assertions while <i>errors</i> are unanticipated.
+        </td>
+            </tr>
+        </table>
+        <hr size="1" width="95%" align="left">
+        <h2>Packages</h2>
+                Note: package statistics are not computed recursively, they only sum up all of its testsuites numbers.
+        
+        <table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+            <tr valign="top">
+                <th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th>Skipped</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
+            </tr>
+            <tr valign="top" class="Error">
+                <td><a href="#pocQA01">pocQA01</a></td><td>5</td><td>3</td><td>0</td><td>0</td><td>17.673</td><td>07 mai 2018 18:53:29 GMT</td><td>CPX-3HLKJ966L48</td>
+            </tr>
+        </table>
+        <hr size="1" width="95%" align="left">
+        <a name="pocQA01"></a>
+        <h3>Package pocQA01</h3>
+        <table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+            <tr valign="top">
+                <th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th>Skipped</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
+            </tr>
+            <tr valign="top" class="Error">
+                <td><a href="#HomeSteps">HomeSteps</a></td><td>4</td><td>2</td><td>0</td><td>0</td><td>17.600</td><td>07 mai 2018 18:53:29 GMT</td><td>CPX-3HLKJ966L48</td>
+            </tr>
+            <tr valign="top" class="Error">
+                <td><a href="#Teste01">Teste01</a></td><td>1</td><td>1</td><td>0</td><td>0</td><td>0.073</td><td>07 mai 2018 17:06:44 GMT</td><td>CPX-3HLKJ966L48</td>
+            </tr>
+        </table>
+        <a href="#top">Back to top</a>
+        <p></p>
+        <p></p>
+        <hr size="1" width="95%" align="left">
+        <a name="HomeSteps"></a>
+        <h3>TestCase HomeSteps</h3>
+        <table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+            <tr valign="top">
+                <th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+            </tr>
+            <tr valign="top" class="">
+                <td>webCasasHome</td><td>Success</td><td></td><td>17.243</td>
+            </tr>
+            <tr valign="top" class="Error">
+                <td>informaDados</td><td>Error</td><td>N/A<code>
+                        <br>
+                        <br>
+                        <br>
+                              java.lang.NullPointerException
+                        <br>
+                        at pocQA01.HomePage.informaDados(HomePage.java:35)
+                        <br>
+                        at pocQA01.HomeSteps.informaDados(HomeSteps.java:23)
+                        <br>
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        <br>
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                        <br>
+                        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                        <br>
+                        at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+                        <br>
+                        at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+                        <br>
+                        at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+                        <br>
+                        at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+                        <br>
+                        at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+                        <br>
+                        at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+                        <br>
+                        at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+                        <br>
+                        at org.testng.TestRunner.privateRun(TestRunner.java:648)
+                        <br>
+                        at org.testng.TestRunner.run(TestRunner.java:505)
+                        <br>
+                        at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+                        <br>
+                        at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+                        <br>
+                        at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+                        <br>
+                        at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+                        <br>
+                        at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+                        <br>
+                        at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+                        <br>
+                        at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+                        <br>
+                        at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+                        <br>
+                        at org.testng.TestNG.runSuites(TestNG.java:1049)
+                        <br>
+                        at org.testng.TestNG.run(TestNG.java:1017)
+                        <br>
+                        at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+                        <br>
+                        at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+                        <br>
+                        at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+                        <br>
+                        <br>
+                            </code></td><td>0.354</td>
+            </tr>
+            <tr valign="top" class="Error">
+                <td>proximaPagina</td><td>Error</td><td>N/A<code>
+                        <br>
+                        <br>
+                        <br>
+                              java.lang.NullPointerException
+                        <br>
+                        at pocQA01.HomePage.proximaPagina(HomePage.java:43)
+                        <br>
+                        at pocQA01.HomeSteps.proximaPagina(HomeSteps.java:30)
+                        <br>
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        <br>
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                        <br>
+                        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                        <br>
+                        at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+                        <br>
+                        at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+                        <br>
+                        at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+                        <br>
+                        at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+                        <br>
+                        at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+                        <br>
+                        at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+                        <br>
+                        at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+                        <br>
+                        at org.testng.TestRunner.privateRun(TestRunner.java:648)
+                        <br>
+                        at org.testng.TestRunner.run(TestRunner.java:505)
+                        <br>
+                        at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+                        <br>
+                        at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+                        <br>
+                        at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+                        <br>
+                        at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+                        <br>
+                        at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+                        <br>
+                        at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+                        <br>
+                        at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+                        <br>
+                        at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+                        <br>
+                        at org.testng.TestNG.runSuites(TestNG.java:1049)
+                        <br>
+                        at org.testng.TestNG.run(TestNG.java:1017)
+                        <br>
+                        at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+                        <br>
+                        at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+                        <br>
+                        at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+                        <br>
+                        <br>
+                            </code></td><td>0.001</td>
+            </tr>
+            <tr valign="top" class="">
+                <td>paginaDadosProposta</td><td>Success</td><td></td><td>0.002</td>
+            </tr>
+        </table>
+        <div class="Properties">
+            <a href="javascript:displayProperties('pocQA01.HomeSteps');">
+                    Properties &raquo;
+                </a>
+        </div>
+        <p></p>
+        <a href="#top">Back to top</a><a name="Teste01"></a>
+        <h3>TestCase Teste01</h3>
+        <table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+            <tr valign="top">
+                <th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+            </tr>
+            <tr valign="top" class="Error">
+                <td>f</td><td>Error</td><td>The driver executable does not exist: C:\Automacao_Santander\chromedriver.exe<code>
+                        <br>
+                        <br>
+                        <br>
+                              java.lang.IllegalStateException: The driver executable does not exist: C:\Automacao_Santander\chromedriver.exe
+                        <br>
+                        at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
+                        <br>
+                        at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
+                        <br>
+                        at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
+                        <br>
+                        at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+                        <br>
+                        at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+                        <br>
+                        at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
+                        <br>
+                        at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+                        <br>
+                        at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:120)
+                        <br>
+                        at pocQA01.Teste01.f(Teste01.java:14)
+                        <br>
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        <br>
+                        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                        <br>
+                        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                        <br>
+                        at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+                        <br>
+                        at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+                        <br>
+                        at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+                        <br>
+                        at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+                        <br>
+                        at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+                        <br>
+                        at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+                        <br>
+                        at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+                        <br>
+                        at org.testng.TestRunner.privateRun(TestRunner.java:648)
+                        <br>
+                        at org.testng.TestRunner.run(TestRunner.java:505)
+                        <br>
+                        at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+                        <br>
+                        at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+                        <br>
+                        at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+                        <br>
+                        at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+                        <br>
+                        at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+                        <br>
+                        at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+                        <br>
+                        at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+                        <br>
+                        at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+                        <br>
+                        at org.testng.TestNG.runSuites(TestNG.java:1049)
+                        <br>
+                        at org.testng.TestNG.run(TestNG.java:1017)
+                        <br>
+                        at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+                        <br>
+                        at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+                        <br>
+                        at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+                        <br>
+                        <br>
+                            </code></td><td>0.073</td>
+            </tr>
+        </table>
+        <div class="Properties">
+            <a href="javascript:displayProperties('pocQA01.Teste01');">
+                    Properties &raquo;
+                </a>
+        </div>
+        <p></p>
+        <a href="#top">Back to top</a>
+    </body>
+</html>
